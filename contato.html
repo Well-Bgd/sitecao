@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+   <link rel="stylesheet" href="style.css">
+    <!--Link de fontes do google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing Script">
+</head>
+<body>
+    <!--header -> Cabeçalho-->
+    <header>
+        <h2 id="marcaPag">Hotel Para Cães</h2>
+        <!--Nav -> Menu-->
+        <nav class="navegacao">
+            <ul class="nav-lista">
+                <li class="nav-lista-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-lista-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="index.html"><img id="logo" src="imagens/logo.png" alt="Logo do programa"></a>
+        <hr>
+    </header>>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="Nome" id="nome" size="50px" required placeholder="Nome Completo">
+            <br>
+            <label for="dataNascimento">Data Nasc.:</label>
+            <input type="text" name="dataNascimento" id="dataNascimento" placeholder="DD/MM/AA">
+            <br>
+            <label for="sexo">Sexo do Animalsinho</label>
+            <input type="radio" name="sexo" id="sexoFeminino" value="F">
+            <label for="sexoFeminino">Feminino</label>
+            <input type="radio" name="sexo" id="sexoMasculino" value="M">
+            <label for="sexoMasculino">Masculino</label>
+            <br>
+            <label for="contato">Contato:</label>
+            <input type="checkbox" name="telefone" id="telefone">
+            <label for="telefone">Telefone</label>
+            <input type="text" name="contato" id="contato">
+            <input type="checkbox" name="e-mail" id="e-mail">
+            <label for="e-mail">E-mail</label>
+            <input type="text" name="contato" id="contato">
+            <br>
+            <label for="foto">Foto do pet</label>
+            <input type="file" name="foto" id="foto">
+            <br>
+            <label for="interesse">Interesse</label>
+            <select name="interesse" id="interesse">
+                <option value="banho">Banho</option>
+                <option value="hospedagem">Hospedagem</option>
+                <option value="outrosAssuntos">Outros Assuntos</option>
+            </select>
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagen" id="mensagem" cols="30" rows="5"></textarea>
+            <br>
+            <input type="submit" name="btnEnvio" value="Enviar">
+            &nbsp;&nbsp;
+            <input type="reset" name="btnReset" value="Limpar">
+
+        </fieldset>
+
+    </form>
+    <br>
+
+    <footer>
+        Copyrigt &copy; 2021. Wellington R.
+    </footer>
+    
+</body>
+</html>
